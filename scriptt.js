@@ -69,7 +69,7 @@ if($(window).width() > 1000){
      
     document.getElementById("menu").classList.add("menu2");
     
-    $('.icon-menu').on('mouseover', function(){
+    $('.icon-menu').on('click', function(){
           if(overflow == 0){
            document.getElementById("menu").classList.remove("menu2");
              /*$('.menu').removeClass(".menu2");*/
@@ -160,7 +160,7 @@ $(window).resize(function(){
     var overflow = 0;
   document.getElementById(".menu").classList.add(".menu2")
     
-    $('.icon-menu').on('mouseover', function(){
+    $('.icon-menu').on('click', function(){
           if(overflow == 0){
              document.getElementById("menu").classList.remove("menu2");
              /*$('.menu').removeClass(".menu2");*/

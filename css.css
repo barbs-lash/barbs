@@ -262,7 +262,7 @@ footer{
     }
     .menuu{
         flex-direction: column;
-        left:px;
+        left:40px;
             top:0px
     }
    /*
@@ -327,5 +327,8 @@ aside{
     display:none;
 } 
 
+.banner{
+   background-position-y: -100px;
+}
     
 }
