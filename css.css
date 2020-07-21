@@ -1,0 +1,331 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:  sans-serif;
+}
+
+
+body { 
+ 
+    background-color:  rgba(200, 150, 150, .4);
+}
+
+
+/*estilos header*/
+
+
+header {
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #449fdb;
+ /* background:   yellowgreen; rgba(221, 85, 112, 1.0)*/
+ background: rgba(180, 100, 100, .4);
+  
+}
+.container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ 
+ 
+ 
+}
+/*estilo logo*/
+.logo {
+   
+    display: flex;
+}
+
+.logo figure{
+    
+}
+.logo figure img{
+  width: 110px;
+    margin-left: 10px;
+
+}
+
+.logo span{
+    font-weight: 300;
+    margin-top: 15px;
+      margin-left: 10px;
+}
+/*estilos menu*/
+.menu{
+    z-index: 1600;
+    position: absolute;
+    right: 0;
+    margin-top: 3px;
+}
+.menu ul li{
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    border-top:4px solid  transparent;
+    cursor:  pointer;
+    transition:border 300ms;
+    transition:border-top 300ms;
+   
+}
+.menu> ul >li:hover{
+    border: 1px groove  #eeeeee;
+    border-top:4px solid  #55A79A;
+}
+.menuu{
+    display: flex;
+    
+}
+.menup{
+    list-style: none;
+    font-size: 100%;
+  
+    
+}
+.menup figure{
+    display: flex;
+}
+.menup span, .menup figure  {
+    color:dimgrey;  
+}
+
+.menup span{
+    font-size: 16px;
+}
+.menup figure{
+    font-size:16px;
+    position: relative;
+
+}
+/*estilos submenu*/
+.menup ul{
+    width: 100px;
+ /* position: relative;*/
+  position: absolute;
+    flex-direction:column;
+   /* top:30px;*/
+    list-style: none;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    border-bottom: 1px solid #55A79A;
+}
+.menup ul li{
+    padding: 1px 1px;
+    border-bottom: 1px solid #eeeeee;
+    
+}
+/*
+.sub1{
+    left: 133px;
+    
+}
+.sub1 span{
+    
+}
+
+.sub2{
+    
+    left: 220px;
+    
+}
+*/
+.menup ul li:hover{
+    background: #FAFAFA;
+}
+
+.icon-menu{
+    display: none;
+}
+
+/*estilos banner*/
+.banner{
+    position:  relative;
+    background:   windowframe;
+    top:40px;
+   
+
+}
+/*estiolo mensaje*/
+
+
+a {
+  color: #000;
+  
+  font-style: italic;
+}
+
+
+.navv {
+    position: relative;
+  width: 100%;
+  height: 7%;
+  /*background-color: #008000;*/
+  background:  #e74c3c;
+  font-size: 90%;
+  text-align: center
+}
+
+
+.navv span {
+  padding-right: 20px;
+}
+/*estilos banner*/
+.banner{
+    background-image:  url(img/ban2.jpg);
+    background-repeat: no-repeat;
+    background-attachment:  fixed;
+    background-size:  cover;
+    top:0px;
+    height: 330px;;
+   background-position-y: -400px;
+   
+}
+.banner h1,
+.banner h2{
+    left:37%;
+    position:relative;
+    top: 50%;
+    font-size: 6vh;
+    width: 30%;
+    color:white;
+}
+.banner h1{
+    left:40%
+}
+/*estilos main*/
+
+.main{ 
+    position: relative;
+   top:330px;
+    left:25%;
+    width: 60%;
+}
+
+main div{
+    margin-bottom: 10px;
+}
+aside{
+    position:absolute;
+    display:block;
+    margin-bottom: 10px;
+    margin-top:20px;
+    justify-content:  space-between;
+    top:40%;
+    right: 300px;
+   
+}
+aside div{
+    width: 80px;
+     margin-bottom: 10px;
+    margin-top:20px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+        color:#ffffff;
+        font-size: 1em;
+       top:500px;
+       text-align:  left;
+}
+
+@media screen and (max-width:1000px){
+    body{
+       
+    }
+    .menu2{
+            display:none;
+      
+    }
+    
+    
+  
+    .icon-menu{
+       /*display: block;*/
+       /* position: relative;*/
+       position: absolute;
+        right: 15px;
+        top: 60px;
+        font-size: 30px;
+        z-index: 20000;
+    }
+    .menu{
+         left:75%;
+        /* width: 230px;*/
+        height: 100vh;
+       /* position:absolute;*/
+       position: fixed;
+            z-index: 1100;       
+    
+    }
+    .menuu{
+        flex-direction: column;
+        left:px;
+            top:0px
+    }
+   /*
+    .sub1{
+        left: 0;
+    }
+    .sub2{
+        left: 0;
+        
+          
+    }
+     */ 
+    .menu ul{
+        
+    }
+    .menuu:hover{
+        background-color: rgba(200,200,200, .8);
+    }
+    .menuu ul li {
+        position: relative;
+        left: -2px;
+    }
+    .menuu ul li:hover{
+         border: 1px groove  #eeeeee;
+    border-top:4px solid  #55A79A;
+    }
+    /*estilos banner*/
+    .banner{
+     background-position-y: -200px;
+     height: 250px;
+    }
+    .banner h1{
+        left: 37%;
+        top:50%;
+    }
+    .banner h2{
+         top:50%;
+        left:35%;
+         font-size: 33px;  
+         width:  fit-content;
+    }
+    .main{ 
+    position: relative;
+   top:340px;
+    left:10%;
+    width:80%;
+    
+}
+aside{
+    display:none;
+} 
+
+}
+
+@media screen and (max-width:680px){
+.banner h1,
+.banner h2{
+display:none;
+}
+
+aside{
+    display:none;
+} 
+
+    
+}
