@@ -57,11 +57,11 @@ if($(window).width() > 1000){
         
     })
     */
-    
+    /*
    $('.menu ul li').on('click', function(e){
         e.stopImmediatePropagation();
     })
-    
+    */
     
     
     
@@ -153,9 +153,9 @@ $(window).resize(function(){
     })
     
     */
-    $('.menu ul li ').on('click', function(e){
+ /*   $('.menu ul li ').on('click', function(e){
         e.stopImmediatePropagation();
-    })
+    })*/
     
     var overflow = 0;
   document.getElementById(".menu").classList.add(".menu2")
